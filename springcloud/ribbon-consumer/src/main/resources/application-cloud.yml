@@ -3,10 +3,8 @@ spring:
   application:
     name: hello-service
 eureka:
-  instance:
-    hostname: localhost
   client:
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:1111/eureka/
+      defaultZone: http://peer1:1111/eureka/,http://peer2:1112/eureka/
 server:
   port: 8001
