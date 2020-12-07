@@ -1,4 +1,4 @@
-package com.dzzdsj.study.springcloud.eureka;
+package com.dzzdsj.study.springcloud.zipkin;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;

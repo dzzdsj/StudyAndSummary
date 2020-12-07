@@ -3,7 +3,8 @@ package com.dzzdsj.study.springcloud.springboot.ribbon;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
-@FeignClient("hello-service") //指定服务名来绑定服务，不区分大小写
+@FeignClient("hello-service") //指定服务名来绑定服务，不区分大小写,同时会创建同名的ribbon客户端，
+                              // 可以在yml配置中指定配置
 public interface HelloService {
 
     @RequestMapping("/hello")
